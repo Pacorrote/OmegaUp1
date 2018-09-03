@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(int argc, const char * argv[]) {
+    int c1, c2, c3;
+    scanf("%i %i %i", &c1, &c2, &c3);
+    if (c1>c2 && c1>c3)
+        printf("El numero mayor es %d", c1);
+    else if (c2>c1 && c2>c3)
+        printf("El numero mayor es %d", c2);
+    else if (c3>c2 && c1<c3)
+        printf("El numero mayor es %d", c3);
+    return 0;
+}
