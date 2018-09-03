@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(int argc, const char * argv[]) {
+    int c1, c2, c3;
+    scanf("%i %i %i", &c1, &c2, &c3);
+    if (c1==60 && c2==60 && c3==60)
+        printf("EQUILATERO");
+    else if (c1==90 || c2==90 || c3==90 && c1+c2+c3==180)
+        printf("ESCALENO");
+    else if (c1+c2+c3==180)
+        printf("ISOSCELES");
+    else
+        printf("ERROR");
+    return 0;
+}
